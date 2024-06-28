@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@media screen and (min-width:750px) {
+
+
+    :root {
+
+        --primarycolor1: hsl(35, 77%, 62%);
+        --primarycolor2: hsl(5, 85%, 63%);
+
+
+        --neutralcolor1: hsl(36, 100%, 99%);
+        --neutralcolor2: hsl(233, 8%, 79%);
+        --neutralcolor3: hsl(236, 13%, 42%);
+        --neutralcolor4: hsl(240, 100%, 5%);
+
+
+        --fontsize: 15px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 2rem;
+        font-family: Inter;
+
+        .buttons {
+            display: none;
+        }
+
+
+
+        nav {
+            .navigations {
+                width: 500px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: var(--neutralcolor4);
+                    font-size: var(--fontsize);
+                }
+            }
+        }
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        font-family: Inter;
+
+
+        .welcomeandnews {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .welcome {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50rem;
+
+                figure {
+                    picture {
+                        img {
+                            height: 20rem;
+                            width: 41rem;
+                        }
+                    }
+                }
+
+                .contents {
+                    margin: -1.7rem 3rem 0rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 6rem;
+
+                    figcaption {
+                        font-size: 2rem;
+                    }
+
+
+                    button {
+                        background-color: var(--primarycolor2);
+                        border: none;
+                        padding: 0 2rem;
+                        height: 2rem;
+
+                        a {
+                            color: var(--primarycolor);
+                            text-decoration: none;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            letter-spacing: .2rem;
+                        }
+                    }
+                }
+            }
+
+            .news {
+                width: 19rem;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 3rem auto;
+                background-color: var(--neutralcolor4);
+                color: white;
+
+
+                h2 {
+                    padding: 0 1rem;
+                    color: var(--primarycolor1);
+                }
+
+                .news__container {
+
+                    .news__item {
+                        padding: 0.7rem;
+                    }
+
+
+                    .news__item:nth-child(1),
+                    .news__item:nth-child(2) {
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+
+
+
+        .offers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+
+            .offers1 {
+                width: 350px;
+                display: flex;
+                gap: 1rem;
+
+
+                img {
+                    width: 100px;
+                }
+
+                h1 {
+                    color: var(--primarycolor2);
+                }
+
+                h2 {
+                    color: var(--neutralcolor4);
+                    text-transform: capitalize;
+                }
+            }
+
+
+            .offers2 {
+                width: 350px;
+                display: flex;
+                gap: 1rem;
+
+
+                img {
+                    width: 100px;
+                }
+
+                h1 {
+                    color: var(--primarycolor2);
+                }
+
+                h2 {
+                    color: var(--neutralcolor4);
+                    text-transform: capitalize;
+                }
+
+            }
+
+
+            .offers3 {
+                width: 350px;
+                display: flex;
+                gap: 1rem;
+
+
+                img {
+                    width: 100px;
+                }
+
+                h1 {
+                    color: var(--primarycolor2);
+                }
+
+                h2 {
+                    color: var(--neutralcolor4);
+                    text-transform: capitalize;
+                }
+            }
+
+        }
+    }
+}
